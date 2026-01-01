@@ -3,11 +3,6 @@ import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
-  const scrollToConsultation = () => {
-    const element = document.getElementById('consultation');
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
@@ -20,8 +15,10 @@ const Index = () => {
             <a href="#wow-products" className="text-sm text-foreground hover:text-accent transition-colors">
               Создание вау-продуктов
             </a>
-            <Button onClick={scrollToConsultation} size="sm" className="bg-accent hover:bg-accent/90">
-              Консультация
+            <Button size="sm" className="bg-accent hover:bg-accent/90" asChild>
+              <a href="https://t.me/AndreyChicherov" target="_blank" rel="noopener noreferrer">
+                Консультация
+              </a>
             </Button>
           </nav>
           <Button variant="ghost" size="icon" className="md:hidden">
@@ -43,15 +40,17 @@ const Index = () => {
               <div className="bg-primary/5 border-l-4 border-accent p-6 rounded-r-lg">
                 <p className="text-lg md:text-xl font-medium text-foreground">
                   <span className="text-accent font-bold">50%</span> наших стартапов выходят на окупаемость. 
-                  Остальные привлекают инвесторов в <span className="text-accent font-bold">10 раз дороже</span> благодаря нашей методологии.
+                  Остальные привлекают инвесторов в <span className="text-accent font-bold">10 раз выгоднее</span> благодаря нашей методологии.
                 </p>
               </div>
               <Button 
-                onClick={scrollToConsultation}
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-white px-8 py-6 text-lg font-semibold"
+                asChild
               >
-                Бесплатная консультация — 15 мин
+                <a href="https://t.me/AndreyChicherov" target="_blank" rel="noopener noreferrer">
+                  Бесплатная консультация — 15 мин
+                </a>
               </Button>
             </div>
           </div>
@@ -59,10 +58,9 @@ const Index = () => {
 
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-4">
-              4 боли русскоговорящих фаундеров
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-16">
+              4 боли фаундеров, которые мы решаем
             </h2>
-            <p className="text-center text-muted-foreground mb-16">которые мы решаем</p>
             
             <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               <Card className="p-8 border-2 border-gray-200 hover:border-accent transition-all hover:shadow-lg">
@@ -115,8 +113,8 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
                   Питч без трекшена не работает. Нужны: первые клиенты, реальная аналитика, работающая юнит-экономика. 
-                  Но у инвестора сами выстраиваются в очередь за инвестированием в ваш проект, так как успешный продукт всегда состоит из: 
-                  идея + экспертиза (вы), техническая реализация + продуктово-маркетинговая реализация (MVPs_lab) + минимальный бюджет (вы или инвестор).
+                  У нас инвесторы сами выстраиваются в очередь, так как успешный продукт всегда состоит из: 
+                  идеи + экспертизы (вы), технической реализации + продуктово-маркетинговой реализации (MVPs Lab) + минимального бюджета (вы или инвестор).
                 </p>
               </Card>
             </div>
@@ -396,6 +394,97 @@ const Index = () => {
           </div>
         </section>
 
+        <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-4">
+              Команда
+            </h2>
+            <p className="text-center text-muted-foreground mb-16">+ еще 10 привлекаемых менторов</p>
+            
+            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+              <Card className="p-8 bg-white border-2 border-gray-200 hover:shadow-lg transition-all">
+                <div className="flex flex-col items-center text-center space-y-6">
+                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-accent/20">
+                    <img 
+                      src="https://cdn.poehali.dev/files/Kirill — копия.png" 
+                      alt="Кирилл Догадин" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-primary mb-2">Кирилл Догадин</h3>
+                    <p className="text-accent font-semibold mb-4">CTO</p>
+                  </div>
+                  <ul className="text-left space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <span>Создатель Your MVP AI-платформы (защитил докторскую по проекту)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <span>10+ лет IT-разработки в международных корпорациях</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <span>6 лет менторства, более 500 менти</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <span>Преподаватель IT-курсов (Иннотех, АТБ), более 600+ часов курсов</span>
+                    </li>
+                  </ul>
+                </div>
+              </Card>
+
+              <Card className="p-8 bg-white border-2 border-gray-200 hover:shadow-lg transition-all">
+                <div className="flex flex-col items-center text-center space-y-6">
+                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-accent/20">
+                    <img 
+                      src="https://cdn.poehali.dev/files/Andrey — копия.png" 
+                      alt="Андрей Чичеров" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-primary mb-2">Андрей Чичеров</h3>
+                    <p className="text-accent font-semibold mb-4">CPO</p>
+                  </div>
+                  <ul className="text-left space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <span>15+ лет серийный предприниматель</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <span>100+ проектов как Product Owner</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <span>Эксперт маркетингового подхода Growth Hacking, усиленной в 10+ раз нашими IT-разработками</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <span>Эксперт продуктовой методологии Advanced AJTBD, усиленной в 10+ раз нашей AI-платформой</span>
+                    </li>
+                  </ul>
+                  <Button variant="outline" className="mt-4" asChild>
+                    <a href="https://t.me/AndreyChicherov" target="_blank" rel="noopener noreferrer">
+                      <Icon name="Send" className="mr-2" size={18} />
+                      @AndreyChicherov
+                    </a>
+                  </Button>
+                </div>
+              </Card>
+            </div>
+
+            <div className="text-center mt-16">
+              <p className="text-2xl font-bold text-primary mb-4">
+                Вместе мы — ваш конвейер для запуска прибыльного бизнеса
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section id="consultation" className="py-20 bg-primary text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center space-y-8">
@@ -409,31 +498,60 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="bg-accent hover:bg-accent/90 text-white px-8 py-6 text-lg font-semibold"
+                  asChild
                 >
-                  <Icon name="Calendar" className="mr-2" size={20} />
-                  Записаться на консультацию
-                </Button>
-              </div>
-              <div className="pt-8 space-y-2 text-gray-300">
-                <p className="flex items-center justify-center gap-2">
-                  <Icon name="Mail" size={20} />
-                  <a href="mailto:contact@mvpslab.com" className="hover:text-accent transition-colors">
-                    contact@mvpslab.com
+                  <a href="https://t.me/AndreyChicherov" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Send" className="mr-2" size={20} />
+                    Записаться на консультацию
                   </a>
-                </p>
-                <p className="flex items-center justify-center gap-2">
-                  <Icon name="Phone" size={20} />
-                  <span>+7 (XXX) XXX-XX-XX</span>
-                </p>
+                </Button>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="bg-gray-900 text-gray-400 py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm">© 2025 MVPs Lab. Все права защищены.</p>
+      <footer className="bg-gray-900 text-gray-400 py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div>
+                <h3 className="text-white font-bold text-lg mb-4">MVPs Lab</h3>
+                <p className="text-sm text-gray-400">
+                  Ваш конвейер для запуска прибыльного бизнеса
+                </p>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-4">Контакты</h4>
+                <div className="space-y-2">
+                  <a 
+                    href="https://t.me/AndreyChicherov" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm hover:text-accent transition-colors"
+                  >
+                    <Icon name="Send" size={16} />
+                    @AndreyChicherov
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-4">Подписывайтесь</h4>
+                <a 
+                  href="http://t.me/MVPs_lab" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm hover:text-accent transition-colors"
+                >
+                  <Icon name="MessageCircle" size={16} />
+                  Telegram канал
+                </a>
+              </div>
+            </div>
+            <div className="border-t border-gray-800 pt-8 text-center">
+              <p className="text-sm">© 2025 MVPs Lab. Все права защищены.</p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
