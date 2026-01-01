@@ -402,77 +402,79 @@ const Index = () => {
             <p className="text-center text-muted-foreground mb-16">+ еще 10 привлекаемых менторов</p>
             
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-              <Card className="p-8 bg-white border-2 border-gray-200 hover:shadow-lg transition-all">
-                <div className="flex flex-col items-center text-center space-y-6">
-                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-accent/20">
-                    <img 
-                      src="https://cdn.poehali.dev/files/Kirill%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png" 
-                      alt="Кирилл Догадин" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
+              <Card className="overflow-hidden bg-white border-2 border-gray-200 hover:shadow-lg transition-all">
+                <div className="aspect-[4/3] w-full overflow-hidden bg-gray-50">
+                  <img 
+                    src="https://cdn.poehali.dev/files/Kirill2.png" 
+                    alt="Кирилл Догадин" 
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="p-8 space-y-6">
+                  <div className="text-center">
                     <h3 className="text-2xl font-bold text-primary mb-2">Кирилл Догадин</h3>
-                    <p className="text-accent font-semibold mb-4">CTO</p>
+                    <p className="text-accent font-semibold">CTO</p>
                   </div>
-                  <ul className="text-left space-y-3 text-muted-foreground">
+                  <ul className="space-y-3 text-muted-foreground text-sm">
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
                       <span>Создатель Your MVP AI-платформы (защитил докторскую по проекту)</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
                       <span>10+ лет IT-разработки в международных корпорациях</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
                       <span>6 лет менторства, более 500 менти</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
                       <span>Преподаватель IT-курсов (Иннотех, АТБ), более 600+ часов курсов</span>
                     </li>
                   </ul>
                 </div>
               </Card>
 
-              <Card className="p-8 bg-white border-2 border-gray-200 hover:shadow-lg transition-all">
-                <div className="flex flex-col items-center text-center space-y-6">
-                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-accent/20">
-                    <img 
-                      src="https://cdn.poehali.dev/files/Andrey%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png" 
-                      alt="Андрей Чичеров" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
+              <Card className="overflow-hidden bg-white border-2 border-gray-200 hover:shadow-lg transition-all">
+                <div className="aspect-[4/3] w-full overflow-hidden bg-gray-50">
+                  <img 
+                    src="https://cdn.poehali.dev/files/Andrey2.png" 
+                    alt="Андрей Чичеров" 
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <div className="p-8 space-y-6">
+                  <div className="text-center">
                     <h3 className="text-2xl font-bold text-primary mb-2">Андрей Чичеров</h3>
-                    <p className="text-accent font-semibold mb-4">CPO</p>
+                    <p className="text-accent font-semibold">CPO</p>
                   </div>
-                  <ul className="text-left space-y-3 text-muted-foreground">
+                  <ul className="space-y-3 text-muted-foreground text-sm">
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
                       <span>15+ лет серийный предприниматель</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
                       <span>100+ проектов как Product Owner</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
                       <span>Эксперт маркетингового подхода Growth Hacking, усиленной в 10+ раз нашими IT-разработками</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={20} />
+                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
                       <span>Эксперт продуктовой методологии Advanced AJTBD, усиленной в 10+ раз нашей AI-платформой</span>
                     </li>
                   </ul>
-                  <Button variant="outline" className="mt-4" asChild>
-                    <a href="https://t.me/AndreyChicherov" target="_blank" rel="noopener noreferrer">
-                      <Icon name="Send" className="mr-2" size={18} />
-                      @AndreyChicherov
-                    </a>
-                  </Button>
+                  <div className="pt-2">
+                    <Button variant="outline" className="w-full" asChild>
+                      <a href="https://t.me/AndreyChicherov" target="_blank" rel="noopener noreferrer">
+                        <Icon name="Send" className="mr-2" size={18} />
+                        @AndreyChicherov
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </Card>
             </div>
