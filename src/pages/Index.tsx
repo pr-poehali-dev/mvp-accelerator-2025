@@ -9,11 +9,11 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">MVPs Lab</div>
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#concept" className="text-sm text-foreground hover:text-accent transition-colors">
+            <a href="https://www.notion.so/2ceaa51b9f74809cb267fd79d0e65f97" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-accent transition-colors">
               Концепция разработки
             </a>
-            <a href="#wow-products" className="text-sm text-foreground hover:text-accent transition-colors">
-              Создание вау-продуктов
+            <a href="https://www.notion.so/2-2d7aa51b9f7480fc8d5cd5d7b2bcb52a" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-accent transition-colors">
+              Как создавать продукты
             </a>
             <Button size="sm" className="bg-accent hover:bg-accent/90" asChild>
               <a href="https://t.me/AndreyChicherov" target="_blank" rel="noopener noreferrer">
@@ -406,7 +406,7 @@ const Index = () => {
                 <div className="flex flex-col items-center text-center space-y-6">
                   <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-accent/20">
                     <img 
-                      src="https://cdn.poehali.dev/files/Kirill — копия.png" 
+                      src="https://cdn.poehali.dev/files/Kirill%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png" 
                       alt="Кирилл Догадин" 
                       className="w-full h-full object-cover"
                     />
@@ -440,7 +440,7 @@ const Index = () => {
                 <div className="flex flex-col items-center text-center space-y-6">
                   <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-accent/20">
                     <img 
-                      src="https://cdn.poehali.dev/files/Andrey — копия.png" 
+                      src="https://cdn.poehali.dev/files/Andrey%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png" 
                       alt="Андрей Чичеров" 
                       className="w-full h-full object-cover"
                     />
