@@ -21,9 +21,7 @@ const Index = () => {
               </a>
             </Button>
           </nav>
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Icon name="Menu" size={24} />
-          </Button>
+
         </div>
       </header>
 
@@ -49,7 +47,8 @@ const Index = () => {
                 asChild
               >
                 <a href="https://t.me/AndreyChicherov" target="_blank" rel="noopener noreferrer">
-                  Бесплатная консультация — 15 мин
+                  <Icon name="Send" className="mr-2" size={20} />
+                  Записаться на консультацию
                 </a>
               </Button>
             </div>
@@ -133,7 +132,7 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-lg bg-accent/10 flex items-center justify-center mb-6">
                   <Icon name="Zap" className="text-accent" size={32} />
                 </div>
-                <h3 className="text-2xl font-bold text-primary mb-4">Your MVP Platform</h3>
+                <h3 className="text-2xl font-bold text-primary mb-4">MVPs_Lab AI-Platform</h3>
                 <p className="text-sm text-muted-foreground mb-6">Вместо технического кофаундера</p>
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
@@ -210,78 +209,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-16">
-              Различия акселераторов
-            </h2>
-            
-            <div className="overflow-x-auto">
-              <table className="w-full max-w-6xl mx-auto border-collapse">
-                <thead>
-                  <tr className="bg-primary text-white">
-                    <th className="text-left p-4 font-semibold">Решение проблемы</th>
-                    <th className="text-center p-4 font-semibold">Y Combinator</th>
-                    <th className="text-center p-4 font-semibold">Российские акселераторы</th>
-                    <th className="text-center p-4 font-semibold">Классические студии</th>
-                    <th className="text-center p-4 font-semibold bg-accent">MVPs Lab</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-medium text-foreground">IT-архитектура (вместо CTO)</td>
-                    <td className="p-4 text-center">⚠️ Помощь</td>
-                    <td className="p-4 text-center">❌ Нет</td>
-                    <td className="p-4 text-center">✅ Есть</td>
-                    <td className="p-4 text-center bg-accent/5 font-semibold text-accent">✅ Your MVP AI платформа</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 bg-gray-50">
-                    <td className="p-4 font-medium text-foreground">Дешевые каналы трафика</td>
-                    <td className="p-4 text-center">❌ Нет</td>
-                    <td className="p-4 text-center">❌ Нет</td>
-                    <td className="p-4 text-center">⚠️ За доп$</td>
-                    <td className="p-4 text-center bg-accent/5 font-semibold text-accent">✅ 10-30x</td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-medium text-foreground">Быстрая проверка гипотез</td>
-                    <td className="p-4 text-center">❌ Нет</td>
-                    <td className="p-4 text-center">⚠️ Советы</td>
-                    <td className="p-4 text-center">❌ Нет</td>
-                    <td className="p-4 text-center bg-accent/5 font-semibold text-accent">✅ Advanced AJTBD + AI</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 bg-gray-50">
-                    <td className="p-4 font-medium text-foreground">Привлечение инвесторов</td>
-                    <td className="p-4 text-center">✅ Лучшие</td>
-                    <td className="p-4 text-center">⚠️ Гранты</td>
-                    <td className="p-4 text-center">❌ Нет</td>
-                    <td className="p-4 text-center bg-accent/5 font-semibold text-accent">✅ 50% без инвесторов</td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-medium text-foreground">Фокус на Российский рынок</td>
-                    <td className="p-4 text-center">❌ Нет (США)</td>
-                    <td className="p-4 text-center">✅ Да</td>
-                    <td className="p-4 text-center">⚠️ Нет опыта</td>
-                    <td className="p-4 text-center bg-accent/5 font-semibold text-accent">✅ Почти всегда</td>
-                  </tr>
-                  <tr className="border-b border-gray-200 bg-gray-50">
-                    <td className="p-4 font-medium text-foreground">Фокус на мировые рынки</td>
-                    <td className="p-4 text-center">✅ Основной</td>
-                    <td className="p-4 text-center">❌ Нет</td>
-                    <td className="p-4 text-center">❌ Нет</td>
-                    <td className="p-4 text-center bg-accent/5 font-semibold text-accent">✅ Почти всегда</td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 font-medium text-foreground">Требуется финансирование</td>
-                    <td className="p-4 text-center text-sm">Высокое</td>
-                    <td className="p-4 text-center text-sm">Среднее</td>
-                    <td className="p-4 text-center text-sm">Высокое</td>
-                    <td className="p-4 text-center bg-accent/5 font-semibold text-accent">Минимальное</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
+
 
         <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto px-4">
@@ -405,33 +333,26 @@ const Index = () => {
               <Card className="overflow-hidden bg-white border-2 border-gray-200 hover:shadow-lg transition-all">
                 <div className="aspect-[4/3] w-full overflow-hidden bg-gray-50">
                   <img 
-                    src="https://cdn.poehali.dev/files/Kirill2.png" 
-                    alt="Кирилл Догадин" 
+                    src="https://cdn.poehali.dev/files/generated-image (42).jpg" 
+                    alt="Руслан Успенов" 
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
                 <div className="p-8 space-y-6">
                   <div className="text-center">
-                    <h3 className="text-2xl font-bold text-primary mb-2">Кирилл Догадин</h3>
+                    <h3 className="text-2xl font-bold text-primary mb-2">Руслан Успенов</h3>
                     <p className="text-accent font-semibold">CTO</p>
                   </div>
                   <ul className="space-y-3 text-muted-foreground text-sm">
                     <li className="flex items-start gap-2">
                       <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
-                      <span>Создатель Your MVP AI-платформы (защитил докторскую по проекту)</span>
+                      <span>Руководитель MVPs_Lab AI-платформы по генерации чистого кода</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
                       <span>10+ лет IT-разработки в международных корпорациях</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
-                      <span>6 лет менторства, более 500 менти</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Icon name="Check" className="text-accent mt-1 flex-shrink-0" size={18} />
-                      <span>Преподаватель IT-курсов (Иннотех, АТБ), более 600+ часов курсов</span>
-                    </li>
+
                   </ul>
                 </div>
               </Card>
@@ -515,8 +436,8 @@ const Index = () => {
 
       <footer className="bg-gray-900 text-gray-400 py-12">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <h3 className="text-white font-bold text-lg mb-4">MVPs Lab</h3>
                 <p className="text-sm text-gray-400">
@@ -534,6 +455,27 @@ const Index = () => {
                   >
                     <Icon name="Send" size={16} />
                     @AndreyChicherov
+                  </a>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-4">Статьи</h4>
+                <div className="space-y-2">
+                  <a 
+                    href="https://www.notion.so/2ceaa51b9f74809cb267fd79d0e65f97" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block text-sm hover:text-accent transition-colors"
+                  >
+                    Концепция разработки
+                  </a>
+                  <a 
+                    href="https://www.notion.so/2-2d7aa51b9f7480fc8d5cd5d7b2bcb52a" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block text-sm hover:text-accent transition-colors"
+                  >
+                    Как создавать продукты
                   </a>
                 </div>
               </div>
